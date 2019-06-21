@@ -16,6 +16,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage":"https://ssh3200.github.io/hwan02"
   "browserslist": {
     "production": [
       ">0.2%",
