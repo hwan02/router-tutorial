@@ -1,11 +1,20 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
+
+import {
+    Home,
+    About
+} from 'pages';
+import Menu from 'components/Menu';
 
 function App() {
-  return (
-    <div className="App">
-     Let's learn react router!
-    </div>
-  );
+    return (
+        <div>
+            <Menu/>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/about/:name?" component={About}/>
+        </div>
+    );
 }
 
 export default App;
