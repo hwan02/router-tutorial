@@ -3,7 +3,8 @@ import {Route} from 'react-router-dom';
 
 import {
     Home,
-    About
+    About,
+    Posts
 } from 'pages';
 import Menu from 'components/Menu';
 
@@ -12,7 +13,8 @@ function App() {
         <div>
             <Menu/>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/about/:name?" component={About}/>
+            <Route path="/about/:name?" component={About}/>
+            <Route path="/posts" component={Posts}/>
         </div>
     );
 }
